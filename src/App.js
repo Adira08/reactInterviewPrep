@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Dayone from './components/Dayone';
+import Daytwo from './components/Daytwo';
+import Daythree from './components/Daythree';
+import Dayfour from './components/Dayfour';
+import Dayfive from './components/Dayfive';
+import Daysix from './components/Daysix';
+import Home from './components/Home'
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <BrowserRouter>
+      <Routes>
+            <Route path="/" element={<Home/>} >
+              <Route index element={<Dayone/>} />
+              <Route path='/Dayone' element={<Dayone/>} />
+              <Route path='/Daytwo' element={<Daytwo/>} />
+              <Route path='/Daythree' element={<Daythree/>} />
+              <Route path='/Dayfour' element={<Dayfour/>} />
+              <Route path='/Dayfive' element={<Dayfive/>} />
+              <Route path='/Daysix' element={<Daysix/>} />
+            </Route>
+          
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App

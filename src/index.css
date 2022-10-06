@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body{
+  width: 80%;
+  margin: auto;
+  background-color: aquamarine;
+}
+h1{
+  text-align: center;
+}
+button{
+  width: 150px;
+  height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  background-color: orangered;
+  font-size: larger;
+  color: white;
+  box-shadow: 5px 5px 5px 2px rgb(245, 176, 176);
+}
+button:hover{
+  width: 170px;
+  height: 32px;
+}
+.active{
+  border-bottom: 3px solid rgb(18, 179, 243);
+  color: rgb(18, 179, 243);
+}
+.navList{
+  display: flex;
+  justify-content: space-between;
+  background-color: azure;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px;
+}
+.navList a img{
+  padding-top: 8px;
+  margin-left: 20px;
+}
+.navList ul{
+  list-style: none;
+  display: flex;
+
+}
+.navList ul li{
+  font-size: larger;
+  color: black;
+  margin: 5px 15px 5px 15px;
+}
+.navList ul li a{
+  text-decoration: none;
+}
+.navList ul li a:hover{
+  text-decoration: underline;
+  color: rgb(18, 179, 243);
+}
+h2{
+  border-bottom: 3px solid orangered;
+  border-style: dashed;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
